@@ -1,0 +1,12 @@
+@font-face{
+     font-family: "Another Danger Font - Demo";
+     src: url("font/Another Danger Slanted - Demo.otf");
+}
+p{
+	font-family: "Another Danger Font - Demo";
+	color:blue;
+	font-size:50px;
+}
+strong{
+	margin-right:50px; 
+}

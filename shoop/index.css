@@ -1,0 +1,43 @@
+#images{
+	height:250px; 
+}
+#smith{
+	height: 150px;
+}
+#user{
+	color: orange;
+	font-size:100px;
+	margin-left:480px; 
+}
+#prix{
+	width:100px; 
+}
+.text{
+	text-shadow:1.5px 1.5px 2px;  
+	color: #090;
+}
+#valider{
+	margin-top:10px;
+	margin-left:20px;  
+}
+.tables{
+	margin-left:200px;
+}
+.admin{
+/*	background-image: url(images/bg.jpg);*/
+}
+.body{
+/*	background-image: url(images/rt.jpg);*/
+}
+#btn{
+	margin-left: 50px;
+}
+#pagination{
+	margin-top:20px; 
+}
+#mot{
+	color: orange;
+}
+#del{
+	margin-right: 100px;
+}

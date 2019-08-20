@@ -1,0 +1,1242 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"404c1769df","applicationID":"16127684","transactionName":"M1RVZxQCWEYCVkQKCgoedmA2TEVQDBpDBgoMXlpWSAJFRRs=","queueTime":0,"applicationTime":68,"ttGuid":"D838A4498D35C90F","agent":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgUPVV5SGwIGVVNVAQkD"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script><title>
+	Autos, camions et VUS d'occasion à vendre | autoHEBDO.net
+</title><link id="ctl00_ctl00_canonical" rel="canonical" href="http://www.autohebdo.net/autos/" /><meta id="metaIndexFollow" name="ROBOTS" CONTENT="NOINDEX,FOLLOW" /><meta name="viewport" content="width=device-width, height=device-height, user-scalable=0, minimum-scale=0.75, maximum-scale=1.0" /><meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /><script>
+var dataLayer = [
+{
+  'mvt': null
+}
+];
+dataLayer.push({'ShowNewCoPath': 'True'});
+
+</script>
+<!--Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K7JHZJ');</script>
+<!-- End Google Tag Manager -->
+<link id="ctl00_ctl00_favicon" rel="shortcut icon" type="image/x-icon" href="http://azr.cdnmedia.autotrader.ca/w1/4.126170803.1408/Looks/default/HB/fr-ca/favicon.ico" />
+    <meta id="ctl00_ctl00_HeadContent_metaOGSiteName" property="og:site_name" content="AutoHebdo.net"></meta>
+    <meta id="ctl00_ctl00_HeadContent_metaOGTitle" property="og:title" content="Autos, camions et VUS d&#39;occasion à vendre | autoHEBDO.net"></meta>
+    <meta id="ctl00_ctl00_HeadContent_metaOGUrl" property="og:url" content="http://www.autohebdo.net/autos/?hprc=True"></meta>
+    
+    <meta property="twitter:account_id" content="4503599628384060" />
+    
+    <link href="http://azr.cdnmedia.autotrader.ca/w1/4.126170803.1408/CDNCSS/bundle/css/seo-fr-ca.css" rel="stylesheet"/>
+
+    <script src="http://azr.cdnmedia.autotrader.ca/w1/4.126170803.1408/bundle/js/seo-fr-ca.js"></script>
+
+
+
+    
+    <!-- Load Google Roboto Font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+     <!-- Load Font Awesome -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- global.css -->
+    
+
+    <!-- Snipped from Main.Master. -->
+    
+<script type="text/javascript">
+var WaData = WaData || {};
+WaData.pv = '/' + ['SEO','SEOHome.aspx'].join('/');
+</script>
+
+    <!-- other WaData Parameters -->
+    
+        <script type="text/javascript">
+            // Answers Cloud Services Embed Script v1.02
+            // DO NOT MODIFY BELOW THIS LINE *****************************************
+            ;(function (g) {
+                var d = document, i, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0],
+                        aex = {
+                            "src": "//gateway.answerscloud.com/autotrader-ca/production/gateway.min.js",
+                            "type": "text/javascript",
+                            "async": "true",
+                            "data-vendor": "acs",
+                            "data-role": "gateway"
+                        };
+                for (var attr in aex) { am.setAttribute(attr,aex[attr]); }
+                h.appendChild(am);
+                g['acsReady'] = function () {var aT = '__acsReady__', args = Array.prototype.slice.call(arguments, 0),k = setInterval(function () {if (typeof g[aT] === 'function') {clearInterval(k);for (i = 0; i < args.length; i++) {g[aT].call(g, function(fn) { return function() { setTimeout(fn, 1) };}(args[i]));}}}, 50);};
+            })(window);
+            // DO NOT MODIFY ABOVE THIS LINE *****************************************
+        </script>
+    
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','//connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1757208891165170');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1757208891165170&ev=PageView&noscript=1" /></noscript>
+        <!-- End Facebook Pixel Code -->                   
+    <meta content="À la recherche d’un auto d'occasion? Visitez autoHEBDO.net pour trouver le auto idéal, près de chez vous!" name="description"></meta>
+</head>
+
+
+<body itemscope itemtype="http://schema.org/Organization" id="fr-ca" class="SiteID_4 Chrome adaptiveLayout">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7JHZJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    
+
+    <script type="text/javascript">$(document).ready(function() { Globalize.culture("fr-CA"); });</script>
+
+    <form name="aspnetForm" method="post" action="/autos/" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_ctl00_HeaderContent_ScriptManager1_HiddenField" id="ctl00_ctl00_HeaderContent_ScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMTI0NDk1NDcyZGTLH69u3A7nStbFA+PPebmabP80aGE2K1XRSx5aswTXDw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="/ScriptResource.axd?d=ZiGB4Y2-SFMEzRD6eSPqVnX9jL1kuIKV0R71LJDw8SYb_rMdh7QyvZBIxJ6XJyD3LW9Rt_f8V_hYlJc4r_pgZBld2ftjdD_dCJ9KoTaffr6WkmIllh0GwMZMill4skxPZiCMb1U2LCt_S_YcHQ-yeCSmDFLMG0UIXmUBrvoc5wimvqRIs4_xPKaiWnI99YF91NqBJLnrhqTHx_TqnMkCmYiKtGQ2as34F3OPutAsnjd6_29Gi_bcEL502kHrmf4QVY_8xbXYG9woHUxszCoAMj89_XWT_DJFlNMRUMoC9HDBqlJBfCilbZRC10jDrbORX2wK8IkX262Dmvg0oTO5QC9VvdnYr556nUyGBqeLb9oBC_krCxm0UCWt1FcQFyrwDqlDZ0HGbyfNsb1hsZ9PbFl3PHquW696WtBa2QQXHbVz4gLDgyh20CwUYUWkHFMSm0BJ9vbok0Ry-E5e6MFHvZDbT6jMC7ObxYPJ_QhybNw7I4pnqWeMpuiuPnjt1JMsM0QVSts-mp1zbtUd_A_o8ftC7zg5qqIW-aQD3QHgPFhwVpPk_rvGfZQhCjzhitB8-fU19yvpvfwV66vUHfRhhL8xOJrC8oW-AjPaGxnpD2F_5DVb6nKlOFztoMut3R5mIOTA4zZva_5v3cCxaMue7ODxOF0ncYGVcqmxHUaRBono4igRcwYW95wOoDg_eYww0OMY5tuuLH5_f0OfepG8Ow2" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B86824A3" />
+</div>
+        
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$HeaderContent$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00$ctl00');
+//]]>
+</script>
+
+
+    
+ 
+    <div id="ctl00_ctl00_HeaderContent_pnlBackground" class="at_takeover at_takeover2">
+
+</div>
+
+   <div id="ctl00_ctl00_HeaderContent_pnlMasthead" class="at_masthead localEdge3">
+	
+        <div class="mastheadContainer">
+            <div id="mastheadHotspot"></div>
+            <div id="ctl00_ctl00_HeaderContent_MastheadAds1_pnlMastheadAds" class="mastheadAds">
+		
+    <ul id="mastheadAdsList" class="mastheadAdsList" data-list-key="ltoWidget">
+    </ul>
+
+	</div>
+        </div>
+   
+</div>
+
+    <div id="header" class="localEdge3">
+        
+        
+
+<div class="at_header2 at_headerContent at_pageWidth isPV layout1 ">
+    
+
+    <div class="logoContainer hide">
+        
+        <a itemprop="url" href="/" class="at_logoLink  at_floatL ">
+            <img id="ctl00_ctl00_HeaderContent_Header2_imgLogo" itemprop="logo" src="" style="border-width:0px;" />
+        </a>
+    </div>
+
+    <div class="at_adChoices2">
+        <span>
+            <a id="ctl00_ctl00_HeaderContent_Header2_hlnkAdChoices2" onclick="wa_trackAdChoicesClickEvent(&#39;FR&#39;)" href="//preferences-mgr.truste.com/?pid=trader01&amp;aid=ahebdopub01&amp;type=ahebdo&amp;locale=fr" target="_blank">Choisir sa Pub</a>
+        </span>
+    </div>
+    
+    <div class="at_headerBanner  at_headerBanner2 at_bannerHolder728x90 ">
+        
+        <div id="divbnrBillbrd">
+            
+
+<!-- Beginning Async AdSlot -->
+<div id='gpt-ad-leaderboard'>
+    
+</div>
+<!-- End Async AdSlot -->
+
+        </div>
+    </div>
+    <header class="container2 at-category-nav-bg">
+        <!-- Category Navigation - Top Nav Bar 1 -->
+        <nav class="at_nav2 ">
+            <ul class="at_categoryLinks at_categoryLinks2">
+                <li><a class="at_selected" href="/" onclick="trackNavClick('Clicks Cars Trucks SUVs Category');">
+                    <span>
+                        Autos, camions et VUS
+                    </span></a></li>
+                <li><a class="" href="/camion_lourd" onclick="trackNavClick('Clicks Heavy Trucks Category');">
+                    <span>
+                        Camions lourds / commerciaux
+                    </span></a></li>
+                <li><a class="" href="/remorques" onclick="trackNavClick('Clicks Trailers Category');">
+                    <span>
+                        Remorques
+                    </span></a></li>
+                <li><a class="" href="/vr" onclick="trackNavClick('Clicks RV Category');">
+                    <span>
+                        &nbsp;&nbsp;VR&nbsp;&nbsp;
+                    </span></a></li>
+                <li><a class="" href="/bateau" onclick="trackNavClick('Clicks Boat Category');">
+                    <span>
+                        Bateaux
+                    </span></a></li>
+                <li><a class="" href="/motomarine" onclick="trackNavClick('Clicks Watercrafts Category');">
+                    <span>
+                        Motomarine
+                    </span></a></li>
+                <li><a class="" href="/moto_vtt" onclick="trackNavClick('Clicks Motorocycles ATV Category');">
+                    <span>
+                        Motos et VTTs
+                    </span></a></li>
+                <li><a class="" href="/motoneige" onclick="trackNavClick('Clicks Snowmobiles Category');">
+                    <span>
+                        Motoneiges
+                    </span></a></li>
+
+                <li><a class="" href="/equipment_lourd" onclick="trackNavClick('Clicks Heavy Equipment Category');">
+                    <span>
+                        Équip. lourd
+                    </span></a></li>
+                <li class="lastItem"><a class="" href="/equipment_agricole" onclick="trackNavClick('Clicks Farm Equipment Category');">
+                    <span>
+                        Équip. agricole
+                    </span></a></li>
+            </ul>
+            <div id="langLinks1" class="langLinks2 ">
+                <a id="ctl00_ctl00_HeaderContent_Header2_engLang" onclick="wa_trackEvent(&#39;Change Language&#39;, &#39;Clicked&#39;, &#39;AutoHEBDO-FR|AutoTRADER-EN&#39;);" href="http://www.autotrader.ca/cars/">English</a> | <a id="ctl00_ctl00_HeaderContent_Header2_frLang" class="disabledLnk">Français</a>
+            </div>
+        </nav>
+    </header>
+    <header class="container2 at-global-nav-bg">
+        
+        <nav class="at_nav2 at_globalNavItems ">
+            
+            <a itemprop="url" href="/" class="at_logoLink  at_floatL at_logoLink_2 ">
+                <span class="logo" itemprop="logo"></span>
+            </a>
+            <ul id="menu_">
+                <li>
+                    <a id="ctl00_ctl00_HeaderContent_Header2_lnkSellMyCar" class="lnkSellCar" onclick="trackSellEvents(&#39;top nav&#39;);" href="https://vendre.autohebdo.net/DefaultAT.aspx?ms=">Vendre ma Voiture</a>
+                </li>
+                <li class="button-dropdown buy-dropdown">
+                    <a id="ctl00_ctl00_HeaderContent_Header2_lnkBuy" class="dropdown-toggle" href="javascript:void(0)">Acheter <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a id="ctl00_ctl00_HeaderContent_Header2_lnkVehicleSearch" href="/result/advancedsearch.aspx?ms=pv&amp;loc=M9C+5J1&amp;prx=100&amp;prv=Ontario&amp;sts=Neuf-Occasion&amp;hprc=True&amp;wcp=True">Rechercher voitures</a>
+                        </li>
+                        <li>
+                            <a id="ctl00_ctl00_HeaderContent_Header2_lnkMonthlyPaymentCalculator" onclick="trackNavClick(&#39;Clicks on Finance Calculator Application Link&#39;);" href="/financement/calculatrice">Calculatrice de prêt automobile</a>
+                        </li>
+                        <li>
+                            <a id="ctl00_ctl00_HeaderContent_Header2_lnkLoanPreApplication" onclick="trackNavClick(&#39;Clicks on Finance Calculator Application Link&#39;);" href="/financement/formulaire">Demande de prêt automobile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="button-dropdown">
+                    <a id="ctl00_ctl00_HeaderContent_Header2_lnkNewsAndResearch" class="dropdown-toggle" href="javascript:void(0)">Nouvelles et évaluations <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li id="ctl00_ctl00_HeaderContent_Header2_liNewsFeatures">
+                            <a id="ctl00_ctl00_HeaderContent_Header2_lnkNewsFeatures" onclick="trackNewsFeatures(&#39;Clicked&#39;, &#39;0|Main Menu Item&#39;);" href="/nouvelles">Nouvelles</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        <li id="ctl00_ctl00_HeaderContent_Header2_lnkOwnerReviewsHeader">
+                            <a id="ctl00_ctl00_HeaderContent_Header2_lnkOwnerReviews" href="/reviews">Évaluations de propriétaires</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li >
+                    <a id="ctl00_ctl00_HeaderContent_Header2_lnkPriceacar" onclick="dl_trackValuationEntryPoint();" href="/valuations">Établir Prix</a>
+                </li>
+                    
+
+    <li class="signIn">
+        <a id="ctl00_ctl00_HeaderContent_Header2_SignInOut2_lnkSignIn" onclick="myGarageHeader.trackClicks(&#39;Sign In&#39;);">Me connecter</a>
+    </li>
+    
+
+
+                    
+            </ul>
+        </nav>
+    </header>
+</div>
+
+
+
+
+    </div>
+
+    
+    
+
+        <div id='content' class='at_pageWidth'>
+        
+    
+    <div id="landingpage">
+        
+
+<div class="breadcrumbs">
+    <a id="ctl00_ctl00_MainContent_MainContent_breadcrumbsControl_hlHome" href="/">Accueil</a>
+    <span><div class="breadcrumbArrowSprite at_sprite"></div></span>
+    
+    Autos
+
+    
+</div>
+        
+<script type="text/javascript">
+    
+    window.fbAsyncInit = function () {
+        FB.init({
+	        appId: '1514874198825188',
+            xfbml: true  
+        });
+        FB.XFBML.parse($()[0]);
+	    $('#share_button').click(function() {
+		    FB.ui({
+			    method: 'share',
+			    href: 'http://www.autohebdo.net/autos/',
+		    }, function(response) {
+		        if (response !== null)
+		            wa_trackFaceBook('like');
+		            dl_trackAdSocialShare('facebook');
+		    });
+	    });	
+    };
+</script>
+
+<div id="fb-root"></div>
+<script type="text/javascript">
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        
+        js.async = true;
+        
+        js.src = "//connect.facebook.net/fr_CA/all.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="socialMediaArea">
+    <!-- Facebook Share Button BEGIN -->
+     <div class="facebookLike at_floatL" style="overflow: visible;">
+        <div id="share_button"></div>
+     </div>
+    <div id="like_button" style="display: none;">
+    </div>
+    <!-- Facebook Share Button END -->   
+        
+    <!-- Tweet button -->
+    
+        <div class="at_twitter at_floatL twittermargin">
+        <a href="https://twitter.com/share" class="twitter-share-button" target="_blank" data-text="Autos, camions et VUS d'occasion à vendre sur @votreautoHEBDO" data-lang="fr" data-url="http://www.autohebdo.net/autos/" data-count="horizontal" data-counturl="http://www.autohebdo.net/autos/">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <script>window.twttr = (function (d,s,id) { var t, js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js=d.createElement(s); js.id=id; js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js, fjs); return window.twttr || (t = { _e: [], ready: function(f) { t._e.push(f); } }); }(document, "script", "twitter-wjs"));</script>
+        <script>twttr.ready(function (twttr) {twttr.events.bind('tweet', function () {dl_trackAdSocialShare('twitter');});});</script>
+    </div>
+    
+
+    <!-- Email a Friend -->
+    
+
+</div>
+<script>
+    function trackGooglePlus(b) {
+        wa_trackPlus1(b);
+        dl_trackAdSocialShare('google');
+    }
+
+</script>
+
+        <br /><br />
+        
+        <div class="heading">
+            Plus populaires modèles
+        </div>
+        <div class="SEO_margin">
+           <table id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels" class="landingList" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                1.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl00_hlYearMakeModel" href="/autos/honda/civic/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Honda Civic</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                4.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl03_hlYearMakeModel" href="/autos/mazda/mazda3/2010/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2010 Mazda 3</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                7.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl06_hlYearMakeModel" href="/autos/ford/f-150/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Ford F-150</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                10.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl09_hlYearMakeModel" href="/autos/volkswagen/jetta/2006/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2006 Volkswagen Jetta</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td>
+	</tr><tr>
+		<td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                2.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl01_hlYearMakeModel" href="/autos/ford/escape/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Ford Escape</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                5.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl04_hlYearMakeModel" href="/autos/toyota/camry/2007/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2007 Toyota Camry</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                8.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl07_hlYearMakeModel" href="/autos/nissan/altima/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Nissan Altima</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                11.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl10_hlYearMakeModel" href="/autos/acura/mdx/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Acura MDX</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td>
+	</tr><tr>
+		<td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                3.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl02_hlYearMakeModel" href="/autos/honda/accord/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Honda Accord</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                6.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl05_hlYearMakeModel" href="/autos/toyota/corolla/2009/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2009 Toyota Corolla</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                9.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl08_hlYearMakeModel" href="/autos/audi/a4/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 Audi A4</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td><td class="popularMakesList" style="height:20px;">
+                    <ul>
+                        <li>
+                            <h2>
+                                12.&nbsp;<a id="ctl00_ctl00_MainContent_MainContent_dlMostPopularModels_ctl11_hlYearMakeModel" href="/autos/bmw/3%20series/2008/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">2008 BMW 3 Series</a>
+                            </h2>
+                        </li>
+                    </ul>
+                </td>
+	</tr>
+</table> 
+        </div>
+
+        <div class="heading">
+            Autos, camions et VUS d’occasion à vendre
+        </div>
+        <div class="SEO_margin">
+            <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes" class="landingList" cellspacing="0" border="0" style="border-collapse:collapse;">
+	<tr>
+		<td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_lblFistChar">A</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith_ctl00_hlMake" href="/autos/ac/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">AC</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith_ctl01_hlMake" href="/autos/acura/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Acura</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith_ctl02_hlMake" href="/autos/alfa%20romeo/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Alfa Romeo</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith_ctl03_hlMake" href="/autos/american%20motors%20(amc)/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">American Motors (AMC)</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith_ctl04_hlMake" href="/autos/aston%20martin/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Aston Martin</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl00_dlMakesStartWith_ctl05_hlMake" href="/autos/audi/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Audi</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl04_lblFistChar">E</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl04_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl04_dlMakesStartWith_ctl00_hlMake" href="/autos/eagle/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Eagle</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl08_lblFistChar">I</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl08_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl08_dlMakesStartWith_ctl00_hlMake" href="/autos/infiniti/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Infiniti</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl08_dlMakesStartWith_ctl01_hlMake" href="/autos/isuzu/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Isuzu</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_lblFistChar">L</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_dlMakesStartWith_ctl00_hlMake" href="/autos/lamborghini/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Lamborghini</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_dlMakesStartWith_ctl01_hlMake" href="/autos/land%20rover/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Land Rover</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_dlMakesStartWith_ctl02_hlMake" href="/autos/lexus/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Lexus</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_dlMakesStartWith_ctl03_hlMake" href="/autos/lincoln/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Lincoln</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl11_dlMakesStartWith_ctl04_hlMake" href="/autos/lotus/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Lotus</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl14_lblFistChar">O</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl14_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl14_dlMakesStartWith_ctl00_hlMake" href="/autos/oldsmobile/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Oldsmobile</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_lblFistChar">S</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl00_hlMake" href="/autos/saab/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Saab</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl01_hlMake" href="/autos/saturn/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Saturn</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl02_hlMake" href="/autos/scion/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Scion</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl03_hlMake" href="/autos/shelby/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Shelby</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl04_hlMake" href="/autos/smart/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">smart</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl05_hlMake" href="/autos/subaru/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Subaru</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl17_dlMakesStartWith_ctl06_hlMake" href="/autos/suzuki/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Suzuki</a>    
+                        </td>
+			</tr>
+		</table>
+                </td>
+	</tr><tr>
+		<td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl01_lblFistChar">B</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl01_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl01_dlMakesStartWith_ctl00_hlMake" href="/autos/bentley/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Bentley</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl01_dlMakesStartWith_ctl01_hlMake" href="/autos/bmw/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">BMW</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl01_dlMakesStartWith_ctl02_hlMake" href="/autos/buick/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Buick</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl05_lblFistChar">F</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl05_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl05_dlMakesStartWith_ctl00_hlMake" href="/autos/ferrari/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Ferrari</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl05_dlMakesStartWith_ctl01_hlMake" href="/autos/fiat/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Fiat</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl05_dlMakesStartWith_ctl02_hlMake" href="/autos/fisker/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Fisker</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl05_dlMakesStartWith_ctl03_hlMake" href="/autos/ford/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Ford</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl09_lblFistChar">J</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl09_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl09_dlMakesStartWith_ctl00_hlMake" href="/autos/jaguar/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Jaguar</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl09_dlMakesStartWith_ctl01_hlMake" href="/autos/jeep/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Jeep</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_lblFistChar">M</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl00_hlMake" href="/autos/maserati/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Maserati</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl01_hlMake" href="/autos/maybach/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Maybach</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl02_hlMake" href="/autos/mazda/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Mazda</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl03_hlMake" href="/autos/mclaren/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">McLaren</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl04_hlMake" href="/autos/mercedes-benz/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Mercedes-Benz</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl05_hlMake" href="/autos/mercury/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Mercury</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl06_hlMake" href="/autos/mg/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">MG</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl07_hlMake" href="/autos/mini/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">MINI</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl12_dlMakesStartWith_ctl08_hlMake" href="/autos/mitsubishi/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Mitsubishi</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl15_lblFistChar">P</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl15_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl15_dlMakesStartWith_ctl00_hlMake" href="/autos/plymouth/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Plymouth</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl15_dlMakesStartWith_ctl01_hlMake" href="/autos/pontiac/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Pontiac</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl15_dlMakesStartWith_ctl02_hlMake" href="/autos/porsche/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Porsche</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl18_lblFistChar">T</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl18_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl18_dlMakesStartWith_ctl00_hlMake" href="/autos/tesla/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">TESLA</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl18_dlMakesStartWith_ctl01_hlMake" href="/autos/toyota/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Toyota</a>    
+                        </td>
+			</tr>
+		</table>
+                </td>
+	</tr><tr>
+		<td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl02_lblFistChar">C</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl02_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl02_dlMakesStartWith_ctl00_hlMake" href="/autos/cadillac/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">CADILLAC</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl02_dlMakesStartWith_ctl01_hlMake" href="/autos/chevrolet/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Chevrolet</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl02_dlMakesStartWith_ctl02_hlMake" href="/autos/chrysler/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Chrysler</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl06_lblFistChar">G</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl06_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl06_dlMakesStartWith_ctl00_hlMake" href="/autos/gmc/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">GMC</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl10_lblFistChar">K</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl10_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl10_dlMakesStartWith_ctl00_hlMake" href="/autos/kia/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Kia</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl13_lblFistChar">N</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl13_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl13_dlMakesStartWith_ctl00_hlMake" href="/autos/nissan/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Nissan</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl16_lblFistChar">R</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl16_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl16_dlMakesStartWith_ctl00_hlMake" href="/autos/ram/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Ram</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl16_dlMakesStartWith_ctl01_hlMake" href="/autos/rolls-royce/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Rolls-Royce</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl19_lblFistChar">V</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl19_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl19_dlMakesStartWith_ctl00_hlMake" href="/autos/volkswagen/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Volkswagen</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl19_dlMakesStartWith_ctl01_hlMake" href="/autos/volvo/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Volvo</a>    
+                        </td>
+			</tr>
+		</table>
+                </td>
+	</tr><tr>
+		<td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl03_lblFistChar">D</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl03_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl03_dlMakesStartWith_ctl00_hlMake" href="/autos/daewoo/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Daewoo</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl03_dlMakesStartWith_ctl01_hlMake" href="/autos/daihatsu/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Daihatsu</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl03_dlMakesStartWith_ctl02_hlMake" href="/autos/dodge/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Dodge</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td class="allMakesList">
+                    <h2><span id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl07_lblFistChar">H</span></h2>
+                
+                    <table id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl07_dlMakesStartWith" cellspacing="0" border="0" style="border-collapse:collapse;">
+			<tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl07_dlMakesStartWith_ctl00_hlMake" href="/autos/honda/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Honda</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl07_dlMakesStartWith_ctl01_hlMake" href="/autos/hummer/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Hummer</a>    
+                        </td>
+			</tr><tr>
+				<td>
+                            <a id="ctl00_ctl00_MainContent_MainContent_dlAllMakes_ctl07_dlMakesStartWith_ctl02_hlMake" href="/autos/hyundai/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion&amp;inMarket=usedCarsInCanada">Hyundai</a>    
+                        </td>
+			</tr>
+		</table>
+                </td><td></td><td></td><td></td><td></td>
+	</tr>
+</table> 
+        </div>
+        
+        <div class="heading">
+            Autos par province
+        </div>
+        <div class="SEO_margin">
+            <div class="landingMapWrapper">
+                <div class="landingMap">
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlBC" class="bclink" alt="auto d’occasion à vendre à Colombie Britanique" href="/autos/bc/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Colombie Britanique</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlAB" class="ablink" alt="auto d’occasion à vendre à Alberta" href="/autos/ab/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Alberta</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlSK" class="sakalink" alt="auto d’occasion à vendre à Saskatchewan" href="/autos/sk/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Saskatchewan</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlMB" class="malink" alt="auto d’occasion à vendre à Manitoba" href="/autos/mb/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Manitoba</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlON" class="ontlink" alt="auto d’occasion à vendre à Ontario" href="/autos/on/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Ontario</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlQC" class="qulink" alt="auto d’occasion à vendre à Québec" href="/autos/qc/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Quebec</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlNL" class="nfllink" alt="auto d’occasion à vendre à Terre-Neuve et Labrador" href="/autos/nl/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Terre-Neuve et Labrador</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlPE" class="peilink" alt="auto d’occasion à vendre à Île-du-Prince-Édouard" href="/autos/pe/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Île-du-Prince-Édouard</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlNS" class="nslink" alt="auto d’occasion à vendre à Nouvelle-Écosse" href="/autos/ns/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Nouvelle-Écosse</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlNB" class="nblink" alt="auto d’occasion à vendre à Nouveau Brunswick" href="/autos/nb/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Nouveau Brunswick</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlNT" class="ntlink" alt="auto d’occasion à vendre à NT" href="/autos/nt/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Territoires du Nord-Ouest</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlNU" class="nulink" alt="auto d’occasion à vendre à NU" href="/autos/nu/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Nunavut</a>
+                    <a id="ctl00_ctl00_MainContent_MainContent_hlYT" class="ytlink" alt="auto d’occasion à vendre à YT" href="/autos/yt/?hprc=True&amp;wcp=True&amp;sts=Neuf-Occasion">Yukon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        </div>
+        
+    <div id="master">
+        <div id="footer">
+        <div class="at_boxCenter">
+            
+            
+        
+            
+    
+            <div id="ctl00_ctl00_FooterContent_FooterControl2_traderFooter" class="adaptiveFooter">
+	
+    <div>
+        <div class="columnContainer">
+            <div class="linkColumn">
+                <ul id="aboutUsLinkContainer">
+                    <li>
+                        <h2>
+                            <asp:Label>À propos de nous</asp:Label>
+                        </h2>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkCorpURL" href="http://go.trader.ca/fr" target="_blank">Société TRADER</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkCareers" href="http://careers.trader.ca/fr" target="_blank">Carrière</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkPrivacy" href="http://www.autohebdo.net/general/info/privacy.aspx">Legal</a>
+                    </li>
+                </ul>
+            
+                <ul id="dealerServicesLinkContainer">
+                    <li>
+                        <h2>
+                            <asp:Label>Services aux détaillants</asp:Label>
+                        </h2>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkDealerServices" href="/dealer/signup/DealerSignup.aspx">Dealer.com</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkVelocitySolutions" href="/dealer/signup/DealerSignup.aspx">vAuto</a>
+                    </li>
+                </ul>               
+            </div>
+
+            <div class="linkColumn">
+                <ul id="resourcesLinkContainer">
+                    <li>
+                        <h2>
+                            <asp:Label>Ressources</asp:Label>
+                        </h2>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkMobile" href="/mobile">Application mobile</a>
+                    </li>
+                    
+                    <li id="ctl00_ctl00_FooterContent_FooterControl2_liOwnerReviews">
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkOwnerReviews" href="/reviews">Évaluations de propriétaires</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkDealerFinder2" href="/dealer/dealerfinder/DealerFinder.aspx">Trouver un détaillant</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkCarResearch" href="/car-buying-and-selling-tips.aspx">Conseils d'achat / vente d'auto</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkFraud" href="/general/info/Fraud_Protection_Tips.aspx">Conseils pour se protéger contre la fraude</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkAdCentreLocator" href="/search/AdCenterLocator.aspx">Trouver un centre d'annonces</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkUsedCarInCanada" href="/autos/">Véhicules d'occasion au Canada</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkCompareCPO" href="../result/cpocompare.aspx?cposrc=4">Comparer les Programmes Certifiés d’occasion</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="linkColumn">
+                <ul id="partnersLinkContainer">
+                    <li>
+                        <h2>
+                            <asp:Label>Partenaires</asp:Label>
+                        </h2>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkAutos" href="http://www.autos.ca" target="_blank">Autos.ca</a>
+                    </li>
+                    <li id="ctl00_ctl00_FooterContent_FooterControl2_liAutoTrader">
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkAutoTrader" href="http://www.autotrader.ca/" target="_blank">autoTRADER.ca</a>
+                    </li>
+                    
+                     
+                    <li id="ctl00_ctl00_FooterContent_FooterControl2_liLesPac">
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkLesPac" href="http://www.lespac.com/" target="_blank">LesPAC.com</a>
+                    </li>
+                </ul>
+
+                <ul id="customerSupportLinkContainer">
+                    <li>
+                        <h2>
+                            <asp:Label>Service à la clientèle</asp:Label>
+                        </h2>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkFrequentAskQuestions" href="/general/info/Faq.aspx">FAQ</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkComments" href="/general/info/ContactUs.aspx">Commentaires</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkFindMyAd" href="/search/FindMyAd.aspx">Repérer mon annonce</a>
+                    </li>
+                    <li>
+                        <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkContactUs" href="/general/info/ContactUs.aspx">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="linkColumn">
+                <ul class="socialMediaLinkContainer">                       
+                    <section class="traderLogoContainer">
+                        <li>
+                            <div class="traderLogo at_sprite"></div>
+                        </li>
+
+                    </section>
+                    <section class="social-network social-circle ">
+                        <li>
+                            <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkSocialFacebook" class="sharer icoFacebook social-share-link" itemprop="sameAs" onclick="dl_trackSocialFanPage(&#39;facebook&#39;); return true;" href="http://www.facebook.com/pages/AutoHebdo/261840002627" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkSocialTwitter" class="sharer icoTwitter social-share-link" itemprop="sameAs" onclick="dl_trackSocialFanPage(&#39;twitter&#39;); return true;" href="https://twitter.com/votreautoHEBDO" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkSocialGooglePlus" class="sharer icoGoogle social-share-link" rel="publisher" itemprop="sameAs" onclick="dl_trackSocialFanPage(&#39;google&#39;); return true;" href="https://plus.google.com/+AutohebdoNetCA/" target="_blank">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="ctl00_ctl00_FooterContent_FooterControl2_hlnkSocialYouTube" class="sharer icoYouTube social-share-link" itemprop="sameAs" onclick="dl_trackSocialFanPage(&#39;youtube&#39;); return true;" href="http://www.youtube.com/user/AutoTraderCanada" target="_blank">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                        </li>
+                    </section>
+
+                    <section class="copyrightContainer">
+                        <span id="ctl00_ctl00_FooterContent_FooterControl2_lblCopyright">©2017 Société TRADER.<br/>Tous droits réservés. Les autres marques sont la propriété de leur propriétaire respectif.</span>
+                        
+                    </section>
+
+                    <section class="appStoreBadgeContainer">
+                        <div class="divMobile">
+                            <div class="appStore">
+                                <a id="ctl00_ctl00_FooterContent_FooterControl2_lnkAndroidButton" onclick="dl_trackAppDownload(&#39;android&#39;); return true;" href="https://play.google.com/store/apps/details?id=ca.autotrader.userapp&amp;hl=fr" target="_blank"><img id="ctl00_ctl00_FooterContent_FooterControl2_imgAndroidButton" src="http://azr.cdnmedia.autotrader.ca/w1/4.126170803.1408/Looks/default/images/mobileAppBtn_android_fr.png" alt="autoHEBDO.net Android app" style="border-width:0px;" /></a>
+                            </div>
+                            <div class="appStore">
+                                <a id="ctl00_ctl00_FooterContent_FooterControl2_lnkAppleButton" onclick="dl_trackAppDownload(&#39;iOS&#39;); return true;" href="http://itunes.apple.com/ca/app/autohebdo.net-le-plus-grand/id368660809?l=fr&amp;mt=8" target="_blank"><img id="ctl00_ctl00_FooterContent_FooterControl2_imgAppleButton" src="http://azr.cdnmedia.autotrader.ca/w1/4.126170803.1408/Looks/default/images/mobileAppBtn_iphone_fr.png" alt="autoHEBDO.net iPhone/iPad app" style="border-width:0px;" /></a>
+                            </div>
+                        </div>
+                    </section>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<img src="http://ace-tag.advertising.com/action/type=130363/bins=1/rich=0/Mnum=1516/" width="1" height="1" border="0" />
+
+
+
+            
+          </div>          
+        </div>
+    </div>
+
+        
+            <script type="text/javascript" src="http://azr.cdnmedia.autotrader.ca/w1/4.126170803.1408/js/ga/ga_setup.js"></script>
+        
+        
+    
+<!-- Build Version: 4.126170803.1408 -->
+<script type="text/javascript">
+//<![CDATA[
+
+var myGarageHeader = new MyGarageHeader("ctl00_ctl00_HeaderContent_Header1_MyGarage1_lblSavedVehiclesCount", "ctl00_ctl00_HeaderContent_Header1_MyGarage1_lblSavedSearcheCount");var mastheadAdsParameters = new aew.MastheadAdsParameters();mastheadAdsParameters.enableMastheadAds = 'true';mastheadAdsParameters.proximity = '100';mastheadAdsParameters.searchLocation = 'M9C 5J1';mastheadAdsParameters.bodyStyle= '';mastheadAdsParameters.make = '';mastheadAdsParameters.model = '';mastheadAdsParameters.microsite = '';var mastheadAds = new aew.MastheadAds(mastheadAdsParameters);var AddMastheadAds = mastheadAds.AddMastheadAds;var GetMastheadAdsSearchOptions = mastheadAds.GetMastheadAdsSearchOptions;var GetMastheadAds_OnSuccess = mastheadAds.GetMastheadAds_OnSuccess;var signInOutControlParameters = new aew.SignInOutControlParameters();signInOutControlParameters.loginPageUrl = 'https://www.autohebdo.net/signin/?rurl=%2fautos%2f%3fisfrm%3d1&isfrm=1';signInOutControlParameters.registerPageUrl = '/signin/?rurl=%2fautos%2f%3fisfrm%3d1&isfrm=2';signInOutControlParameters.lnkSignInClientID = 'ctl00_ctl00_HeaderContent_Header2_SignInOut2_lnkSignIn';var signInOutControl = new aew.SignInOutControl(signInOutControlParameters);//]]>
+</script>
+</form>
+
+    
+
+    <!-- comscore begin -->
+    
+        <script  type="text/javascript">
+            var s = document.getElementsByTagName('script')[0];
+            var node = document.createElement('script');
+            node.type = 'text/javascript';
+            node.async = true;
+            node.src = unescape(document.location.protocol == 'https:' ? 'https://sb' : 'http://b')
+            + '.scorecardresearch.com/beacon.js';
+            s.parentNode.insertBefore(node,s);
+        </script>
+        <script  type="text/javascript">
+            var Trader = Trader || {};
+            Trader.beacon = function () {
+            COMSCORE.beacon({
+            c1:2,
+            c2:"6036213",
+            c3:"",
+            c4:"www.autohebdo.net/SEO/SEOHome.aspx",
+            c5:"",
+            c6:"",
+            c15:""
+            });
+        };
+
+        // LTWO-157 - COMSCORE tracking undefined when user disables tracking and browsing in private mode - catch error to allow other js to continue executing
+        try { jQuery(window).on('load', Trader.beacon); } catch (error) { }
+        
+        </script>
+        <noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036213&c3=&c4=www.autohebdo.net/SEO/SEOHome.aspx&c5=&c6=&c15=&cj=1" />
+        </noscript>
+    <!-- comscore end -->
+
+    
+
+    
+    
+    
+
+    <script type="text/javascript"> 
+                                                    var google_tag_params =  {
+  "pagetype": "",
+  "source": "",
+  "make": "",
+  "model": "",
+  "condition": "",
+  "city": ""
+};
+                                                  </script>
+
+<!-- Google Code for Main List -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 996015975;
+var google_conversion_label = "pKDXCOH4vgUQ5_732gM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/996015975/?value=0&amp;label=pKDXCOH4vgUQ5_732gM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+    
+
+
+
+    
+    
+
+	<!-- Start: GPT Async -->
+	<script type='text/javascript'>
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function () {
+		var gads = document.createElement('script');
+		gads.async = true; gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+	</script>
+
+    	<script type='text/javascript'>
+	var slot_leaderboard;
+	var slot_bb;
+	var slot_ss;
+	googletag.cmd.push(function() {
+
+
+		//Adslot leaderboard declaration
+		slot_leaderboard= googletag.defineSlot('/8544/autoHEBDO', [[728,90]],'gpt-ad-leaderboard').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+
+		//Adslot bb declaration
+		slot_bb= googletag.defineSlot('/8544/autoHEBDO', [[300,250],[300,600]],'gpt-ad-bb').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+
+		//Adslot ss declaration
+		slot_ss= googletag.defineSlot('/8544/autoHEBDO', [[160,600]],'gpt-ad-ss').addService(googletag.pubads()).setCollapseEmptyDiv(true);
+
+		googletag.pubads().enableSingleRequest();
+		googletag.pubads().setTargeting('position','top').setTargeting('condition', ['new', 'used', 'damaged', 'cpo']).setTargeting('siteenvironment','production').setTargeting('userid', '23651550913001069190334172073749552245');
+		googletag.pubads().enableAsyncRendering();
+		googletag.enableServices();
+		googletag.display('gpt-ad-leaderboard');
+		googletag.display('gpt-ad-bb');
+		googletag.display('gpt-ad-ss');
+	});
+	</script>
+	<!-- End: GPT Async -->
+
+
+    
+    
+    
+</body>
+</html>
+ 
